@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(220, 196, 241);
+}
+body {
+  background-image: url(images/generic_bc.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#input {
+  font-size: 30px;
+}
+#submit {
+  background-color: transparent;
+  border: 0;
+}
+#loc_input {
+  background-color: rgb(85, 60, 60);
+  border-radius: 5px;
+}
+#loc_input:focus {
+}
