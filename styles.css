@@ -21,3 +21,20 @@ body {
 }
 #loc_input:focus {
 }
+main {
+  display: flex;
+}
+
+#left,
+#right {
+  flex: 1;
+}
+
+#right {
+  padding-right: 10vh;
+  display: grid;
+  justify-content: end;
+}
+main > * {
+  border: 1px solid red;
+}

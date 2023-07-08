@@ -9,19 +9,25 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-    <h1>Weater Forecast</h1>
-    <form id="input" action="">
-      <label for="loc_input">Location</label>
-      <input type="text" name="loc_input" id="loc_input" />
-      <input type="button" value="Submit" id="submit" />
-    </form>
-    <div>
-      <span>Temp</span>
-      <span id="temp"></span>
-    </div>
-    <div>
-      <span>Location</span>
-      <span id="loca"></span>
-    </div>
+    <main>
+      <div id="left">
+        <h1>Weater Forecast</h1>
+        <form id="input" action="">
+          <label for="loc_input">Location</label>
+          <input type="text" name="loc_input" id="loc_input" />
+          <input type="button" value="Submit" id="submit" />
+        </form>
+      </div>
+      <div id="right">
+        <div>
+          <span>Temp</span>
+          <span id="temp"></span>
+        </div>
+        <div>
+          <span>Location</span>
+          <span id="loca"></span>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
