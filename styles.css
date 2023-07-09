@@ -28,13 +28,22 @@ main {
 #left,
 #right {
   flex: 1;
+  padding: 10px;
+  margin: 10px;
 }
 
 #right {
-  padding-right: 10vh;
   display: grid;
   justify-content: end;
 }
 main > * {
-  border: 1px solid red;
+}
+
+.info {
+  font-size: 33px;
+}
+.info_container {
+  padding-bottom: 5px;
+  display: grid;
+  justify-content: left;
 }
