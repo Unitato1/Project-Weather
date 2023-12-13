@@ -5,7 +5,6 @@ const submit = document.querySelector("#submit");
 const humidity = document.querySelector("#humidity");
 const wind = document.querySelector("#wind");
 const condition_con = document.querySelector("#condition");
-const gif_img = document.querySelector("#gif_weather");
 
 async function get_weather(location = "London") {
   const response = await fetch(
@@ -27,16 +26,6 @@ async function get_weather(location = "London") {
   weather.catch(function () {
     loc.textContent = "Wrong location";
     tempe.textContent = "";
-  });
-}
-async function get_gif(condition) {
-  const res = await fetch(
-    `https://api.giphy.com/v1/gifs/translate?api_key=pH6XfW22KImvJ6BVmimwN1Uv3NXaJuBw&s=${condition}`,
-    { mode: "cors" }
-  );
-  const gif_data = res.json();
-  gif_data.then(function (gif) {
-    gif_img.src = gif.data.images.original.url;
   });
 }
 
